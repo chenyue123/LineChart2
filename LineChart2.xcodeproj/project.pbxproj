@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCCFDD2F1655068000DFAF14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCFDD2E1655068000DFAF14 /* UIKit.framework */; };
+		DCCFDD311655068000DFAF14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCFDD301655068000DFAF14 /* Foundation.framework */; };
+		DCCFDD331655068000DFAF14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCFDD321655068000DFAF14 /* CoreGraphics.framework */; };
+		DCCFDD391655068000DFAF14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCCFDD371655068000DFAF14 /* InfoPlist.strings */; };
+		DCCFDD3B1655068000DFAF14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD3A1655068000DFAF14 /* main.m */; };
+		DCCFDD3F1655068000DFAF14 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD3E1655068000DFAF14 /* ASAppDelegate.m */; };
+		DCCFDD421655068000DFAF14 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCFDD401655068000DFAF14 /* MainStoryboard.storyboard */; };
+		DCCFDD451655068100DFAF14 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD441655068100DFAF14 /* ASViewController.m */; };
+		DCCFDD4D1655068100DFAF14 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCFDD4C1655068100DFAF14 /* SenTestingKit.framework */; };
+		DCCFDD4E1655068100DFAF14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCFDD2E1655068000DFAF14 /* UIKit.framework */; };
+		DCCFDD4F1655068100DFAF14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCFDD301655068000DFAF14 /* Foundation.framework */; };
+		DCCFDD571655068100DFAF14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCCFDD551655068100DFAF14 /* InfoPlist.strings */; };
+		DCCFDD5A1655068100DFAF14 /* LineChart2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD591655068100DFAF14 /* LineChart2Tests.m */; };
+		DCCFDD65165506A700DFAF14 /* ASDrawLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD64165506A700DFAF14 /* ASDrawLineChart.m */; };
+		DCCFDD68165506B500DFAF14 /* ASStockInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD67165506B500DFAF14 /* ASStockInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCCFDD501655068100DFAF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCCFDD211655068000DFAF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCCFDD291655068000DFAF14;
+			remoteInfo = LineChart2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCCFDD2A1655068000DFAF14 /* LineChart2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineChart2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCFDD2E1655068000DFAF14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCCFDD301655068000DFAF14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCCFDD321655068000DFAF14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCCFDD361655068000DFAF14 /* LineChart2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LineChart2-Info.plist"; sourceTree = "<group>"; };
+		DCCFDD381655068000DFAF14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCCFDD3A1655068000DFAF14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCCFDD3C1655068000DFAF14 /* LineChart2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineChart2-Prefix.pch"; sourceTree = "<group>"; };
+		DCCFDD3D1655068000DFAF14 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
+		DCCFDD3E1655068000DFAF14 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
+		DCCFDD411655068000DFAF14 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DCCFDD431655068000DFAF14 /* ASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
+		DCCFDD441655068100DFAF14 /* ASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
+		DCCFDD4B1655068100DFAF14 /* LineChart2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineChart2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCFDD4C1655068100DFAF14 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DCCFDD541655068100DFAF14 /* LineChart2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LineChart2Tests-Info.plist"; sourceTree = "<group>"; };
+		DCCFDD561655068100DFAF14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCCFDD581655068100DFAF14 /* LineChart2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineChart2Tests.h; sourceTree = "<group>"; };
+		DCCFDD591655068100DFAF14 /* LineChart2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineChart2Tests.m; sourceTree = "<group>"; };
+		DCCFDD63165506A700DFAF14 /* ASDrawLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDrawLineChart.h; sourceTree = "<group>"; };
+		DCCFDD64165506A700DFAF14 /* ASDrawLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDrawLineChart.m; sourceTree = "<group>"; };
+		DCCFDD66165506B500DFAF14 /* ASStockInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStockInfo.h; sourceTree = "<group>"; };
+		DCCFDD67165506B500DFAF14 /* ASStockInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStockInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCCFDD271655068000DFAF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCFDD2F1655068000DFAF14 /* UIKit.framework in Frameworks */,
+				DCCFDD311655068000DFAF14 /* Foundation.framework in Frameworks */,
+				DCCFDD331655068000DFAF14 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCFDD471655068100DFAF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCFDD4D1655068100DFAF14 /* SenTestingKit.framework in Frameworks */,
+				DCCFDD4E1655068100DFAF14 /* UIKit.framework in Frameworks */,
+				DCCFDD4F1655068100DFAF14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCCFDD1F1655068000DFAF14 = {
+			isa = PBXGroup;
+			children = (
+				DCCFDD66165506B500DFAF14 /* ASStockInfo.h */,
+				DCCFDD67165506B500DFAF14 /* ASStockInfo.m */,
+				DCCFDD63165506A700DFAF14 /* ASDrawLineChart.h */,
+				DCCFDD64165506A700DFAF14 /* ASDrawLineChart.m */,
+				DCCFDD341655068000DFAF14 /* LineChart2 */,
+				DCCFDD521655068100DFAF14 /* LineChart2Tests */,
+				DCCFDD2D1655068000DFAF14 /* Frameworks */,
+				DCCFDD2B1655068000DFAF14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCCFDD2B1655068000DFAF14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCCFDD2A1655068000DFAF14 /* LineChart2.app */,
+				DCCFDD4B1655068100DFAF14 /* LineChart2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCCFDD2D1655068000DFAF14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCCFDD2E1655068000DFAF14 /* UIKit.framework */,
+				DCCFDD301655068000DFAF14 /* Foundation.framework */,
+				DCCFDD321655068000DFAF14 /* CoreGraphics.framework */,
+				DCCFDD4C1655068100DFAF14 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCCFDD341655068000DFAF14 /* LineChart2 */ = {
+			isa = PBXGroup;
+			children = (
+				DCCFDD3D1655068000DFAF14 /* ASAppDelegate.h */,
+				DCCFDD3E1655068000DFAF14 /* ASAppDelegate.m */,
+				DCCFDD401655068000DFAF14 /* MainStoryboard.storyboard */,
+				DCCFDD431655068000DFAF14 /* ASViewController.h */,
+				DCCFDD441655068100DFAF14 /* ASViewController.m */,
+				DCCFDD351655068000DFAF14 /* Supporting Files */,
+			);
+			path = LineChart2;
+			sourceTree = "<group>";
+		};
+		DCCFDD351655068000DFAF14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCCFDD361655068000DFAF14 /* LineChart2-Info.plist */,
+				DCCFDD371655068000DFAF14 /* InfoPlist.strings */,
+				DCCFDD3A1655068000DFAF14 /* main.m */,
+				DCCFDD3C1655068000DFAF14 /* LineChart2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCCFDD521655068100DFAF14 /* LineChart2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCCFDD581655068100DFAF14 /* LineChart2Tests.h */,
+				DCCFDD591655068100DFAF14 /* LineChart2Tests.m */,
+				DCCFDD531655068100DFAF14 /* Supporting Files */,
+			);
+			path = LineChart2Tests;
+			sourceTree = "<group>";
+		};
+		DCCFDD531655068100DFAF14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCCFDD541655068100DFAF14 /* LineChart2Tests-Info.plist */,
+				DCCFDD551655068100DFAF14 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCCFDD291655068000DFAF14 /* LineChart2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCCFDD5D1655068100DFAF14 /* Build configuration list for PBXNativeTarget "LineChart2" */;
+			buildPhases = (
+				DCCFDD261655068000DFAF14 /* Sources */,
+				DCCFDD271655068000DFAF14 /* Frameworks */,
+				DCCFDD281655068000DFAF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LineChart2;
+			productName = LineChart2;
+			productReference = DCCFDD2A1655068000DFAF14 /* LineChart2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCCFDD4A1655068100DFAF14 /* LineChart2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCCFDD601655068100DFAF14 /* Build configuration list for PBXNativeTarget "LineChart2Tests" */;
+			buildPhases = (
+				DCCFDD461655068100DFAF14 /* Sources */,
+				DCCFDD471655068100DFAF14 /* Frameworks */,
+				DCCFDD481655068100DFAF14 /* Resources */,
+				DCCFDD491655068100DFAF14 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCCFDD511655068100DFAF14 /* PBXTargetDependency */,
+			);
+			name = LineChart2Tests;
+			productName = LineChart2Tests;
+			productReference = DCCFDD4B1655068100DFAF14 /* LineChart2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCCFDD211655068000DFAF14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Alpha Studio";
+			};
+			buildConfigurationList = DCCFDD241655068000DFAF14 /* Build configuration list for PBXProject "LineChart2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCCFDD1F1655068000DFAF14;
+			productRefGroup = DCCFDD2B1655068000DFAF14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCCFDD291655068000DFAF14 /* LineChart2 */,
+				DCCFDD4A1655068100DFAF14 /* LineChart2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCCFDD281655068000DFAF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCFDD391655068000DFAF14 /* InfoPlist.strings in Resources */,
+				DCCFDD421655068000DFAF14 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCFDD481655068100DFAF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCFDD571655068100DFAF14 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCCFDD491655068100DFAF14 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCCFDD261655068000DFAF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCFDD3B1655068000DFAF14 /* main.m in Sources */,
+				DCCFDD3F1655068000DFAF14 /* ASAppDelegate.m in Sources */,
+				DCCFDD451655068100DFAF14 /* ASViewController.m in Sources */,
+				DCCFDD65165506A700DFAF14 /* ASDrawLineChart.m in Sources */,
+				DCCFDD68165506B500DFAF14 /* ASStockInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCFDD461655068100DFAF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCFDD5A1655068100DFAF14 /* LineChart2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCCFDD511655068100DFAF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCCFDD291655068000DFAF14 /* LineChart2 */;
+			targetProxy = DCCFDD501655068100DFAF14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCCFDD371655068000DFAF14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCCFDD381655068000DFAF14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCCFDD401655068000DFAF14 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCCFDD411655068000DFAF14 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		DCCFDD551655068100DFAF14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCCFDD561655068100DFAF14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCCFDD5B1655068100DFAF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCCFDD5C1655068100DFAF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCCFDD5E1655068100DFAF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LineChart2/LineChart2-Prefix.pch";
+				INFOPLIST_FILE = "LineChart2/LineChart2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCCFDD5F1655068100DFAF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LineChart2/LineChart2-Prefix.pch";
+				INFOPLIST_FILE = "LineChart2/LineChart2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCCFDD611655068100DFAF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LineChart2.app/LineChart2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LineChart2/LineChart2-Prefix.pch";
+				INFOPLIST_FILE = "LineChart2Tests/LineChart2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DCCFDD621655068100DFAF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LineChart2.app/LineChart2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LineChart2/LineChart2-Prefix.pch";
+				INFOPLIST_FILE = "LineChart2Tests/LineChart2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCCFDD241655068000DFAF14 /* Build configuration list for PBXProject "LineChart2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCCFDD5B1655068100DFAF14 /* Debug */,
+				DCCFDD5C1655068100DFAF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCCFDD5D1655068100DFAF14 /* Build configuration list for PBXNativeTarget "LineChart2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCCFDD5E1655068100DFAF14 /* Debug */,
+				DCCFDD5F1655068100DFAF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCCFDD601655068100DFAF14 /* Build configuration list for PBXNativeTarget "LineChart2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCCFDD611655068100DFAF14 /* Debug */,
+				DCCFDD621655068100DFAF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCCFDD211655068000DFAF14 /* Project object */;
+}
