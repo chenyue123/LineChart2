@@ -7,11 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ASDrawLineChart.h"
+#import "ASDrawLineChartDemo.h"
 #import "ASStockInfo.h"
+#import "ASDrawLineChart.h"
+#import "ToolbarDemo.h"
+#import "ASStockToolBar.h"
+#import "ASStockGridding.h"
+#import "ASNetStockInfo.h"
+#import "ASStockPriceInfo.h"
+#import "ASKLineController.h"
+
+
 @interface ASViewController : UIViewController
 {
-     ASDrawLineChart *m_drawLineChart;
+     //ASDrawLineChartDemo *m_drawLineChart;
+    ASDrawLineChart *m_drawLineChart;
+    ASStockToolBar *m_Toolbar;
+    ASStockGridding *m_BackgroundGridding;
+    ASKLineController *m_drawKLineController;
+    
+    NSArray *m_SegmentedImageArray;
+    
+    ASNetStockInfo * m_netStockInfo;
+    
+    UIImageView *m_ImageLine;
 }
--(IBAction)buttonPressed:(id)sender;
 @end

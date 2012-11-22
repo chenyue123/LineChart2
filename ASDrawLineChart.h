@@ -1,25 +1,22 @@
 //
 //  ASDrawLineChart.h
-//  StockFinance
+//  LineChart2
 //
-//  Created by  on 12-11-15.
-//  Copyright (c) 2012年 xyooyy. All rights reserved.
+//  Created by  on 12-11-16.
+//  Copyright (c) 2012年 Alpha Studio. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "ASStockInfo.h"
-
+#import "ASPositionConv.h"
 @interface ASDrawLineChart : UIView
 {
-    NSMutableArray* m_arraySockInfo;
     UIImageView *m_DrawImage;
-    double m_dUnit;
+    NSMutableArray* m_arrSockInfo;
+    ASPositionConv * m_positionConv;
 }
 -(id) init : (UIImageView*) imageView ;
-
 -(void) AddStockInfo : (ASStockInfo*) stockInfo;
-
 -(void) DrawLineChart;
-
-
+-(void) Reset;
 @end

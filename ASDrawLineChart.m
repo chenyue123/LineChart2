@@ -1,114 +1,87 @@
 //
 //  ASDrawLineChart.m
-//  StockFinance
+//  LineChart2
 //
-//  Created by  on 12-11-15.
-//  Copyright (c) 2012年 xyooyy. All rights reserved.
+//  Created by  on 12-11-16.
+//  Copyright (c) 2012年 Alpha Studio. All rights reserved.
 //
 
 #import "ASDrawLineChart.h"
 
 @implementation ASDrawLineChart
 
--(id) init : (UIImageView*) imageView
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+    }
+    return self;
+}
+
+-(id) init : (UIImageView*) imageView 
 {
     self = [super init];
     if(self)
     {
-        m_arraySockInfo = [[NSMutableArray alloc]initWithCapacity:0];
+        m_arrSockInfo = [[NSMutableArray alloc]initWithCapacity:0];
         self.frame = imageView.frame;
         m_DrawImage = imageView;
-        
+        m_positionConv  = [[ASPositionConv alloc]init:imageView];
     }
     return self;
 }
 -(void) AddStockInfo : (ASStockInfo*) stockInfo
 {
-    [m_arraySockInfo addObject:stockInfo];
+    [m_arrSockInfo addObject:stockInfo];
+    [m_positionConv AddStockInfo:stockInfo];
+    
 }
+-(void)DrawLine : (CGContextRef) context
+{
+    [m_positionConv CreateLineChartPos];
+    //CGContextRef context = UIGraphicsGetCurrentContext();
+    ASStockPosInfo *nextPositonInfo = [m_positionConv GetNextPosInfo];
+    
+    for(; nextPositonInfo != nil;)
+    {
+        CGContextMoveToPoint(context, [nextPositonInfo GetEndPos].x, [nextPositonInfo GetEndPos].y);
+        nextPositonInfo = [m_positionConv GetNextPosInfo];
+        if(nextPositonInfo != nil)
+        {
+            CGContextAddLineToPoint(context, [nextPositonInfo GetEndPos].x, [nextPositonInfo GetEndPos].y);
+        }
+    }
+}
+
 -(void) DrawLineChart
 {
-    //保存第一个点 的价格
-    double d_First = [[m_arraySockInfo objectAtIndex:0] GetEndPrice];
-    double d_maximum = d_First;//最高点
-    double d_minimum = d_First;//最低点
-    int bigerTmpCount = 0;//大于第一个值的点个数
-    int litterTmpCount = 0;//小于第一个值的点个数
-    for(int i = 1;i < m_arraySockInfo.count; i++)
-    {
-        double testTmp = [[m_arraySockInfo objectAtIndex:i] GetEndPrice];
-        if(testTmp > d_maximum)
-        {
-            d_maximum = testTmp;
-        }
-        if(testTmp < d_minimum)
-        {
-            d_minimum = testTmp;
-        }
-        if(testTmp > d_First)
-        {
-            bigerTmpCount ++;
-        }
-        if(testTmp < d_First)
-        {
-            litterTmpCount ++;
-        }
-    }
-    double temp = (d_maximum - d_First) - (d_First - d_minimum);
-    double d_Xunit = 3200/240;
-    //以上面的为准
-    if(temp >= 0)
-    {
-        //差值
-        double dbHeight = m_DrawImage.frame.size.height;
-        double dbDiff = d_maximum - d_First;
-        m_dUnit = 2 * dbDiff/dbHeight;
-    }
-    if(temp < 0)
-    {
-        double dbHeight = m_DrawImage.frame.size.height;
-        double dbDiff = d_First - d_minimum;
-        m_dUnit = 2 * dbDiff/dbHeight;
-    }
-    
-    
-    self.backgroundColor = [UIColor blueColor]; 
     UIGraphicsBeginImageContext(m_DrawImage.frame.size);
     //得到上下文
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
+    CGContextTranslateCTM(context, 0, m_DrawImage.frame.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
     //设置线的格式
     CGContextSetLineCap(context, kCGLineCapRound);
     //设置线的宽度
-    CGContextSetLineWidth(context, 5.0);
+    CGContextSetLineWidth(context, 1.0);
     CGContextSetAllowsAntialiasing(context, YES);
     //设置颜色的透明度
     CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1.0);
     CGContextBeginPath(context);
     
-    
-    //画第一条线
-    double point2 = [[m_arraySockInfo objectAtIndex:1]GetEndPrice];
-    double d_Point2Y = (point2 - d_First) / m_dUnit + m_DrawImage.frame.size.height / 2;
-    CGContextMoveToPoint(UIGraphicsGetCurrentContext(), 0, 0);
-    CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), d_Xunit , 360);
-    
-//    for(int i = 1; i < 2; i++)
-//    {
-//        //获得相邻两个点的价格
-//        double d_tmpi = [[m_arraySockInfo objectAtIndex:i] GetEndPrice];
-//        double d_tmpj = [[m_arraySockInfo objectAtIndex:(i + 1)] GetEndPrice];
-//        //组成直线两个点的Y值
-//        double d_Yi = (d_tmpi - d_First) / m_dUnit + m_DrawImage.frame.size.height / 2;
-//        double d_Yj = (d_tmpj - d_First) / m_dUnit + m_DrawImage.frame.size.height / 2;
-//        CGContextMoveToPoint(UIGraphicsGetCurrentContext(), d_Xunit * i, d_Yi);
-//        CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), d_Xunit * (i + 1), d_Yj);
-//        //应该是除法
-//    }
+    [self DrawLine : context];   
     
     CGContextStrokePath(context);
     m_DrawImage.image=UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    
+}
+
+
+-(void) Reset
+{
+    [m_positionConv ResetInfo];
 }
 /*
 // Only override drawRect: if you perform custom drawing.
