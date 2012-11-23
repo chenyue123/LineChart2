@@ -25,6 +25,7 @@
 		DCCFDD5A1655068100DFAF14 /* LineChart2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD591655068100DFAF14 /* LineChart2Tests.m */; };
 		DCCFDD65165506A700DFAF14 /* ASDrawLineChartDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD64165506A700DFAF14 /* ASDrawLineChartDemo.m */; };
 		DCCFDD68165506B500DFAF14 /* ASStockInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCFDD67165506B500DFAF14 /* ASStockInfo.m */; };
+		DCD0692E165EFD96009C79B3 /* ASStockDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD0692D165EFD96009C79B3 /* ASStockDataView.m */; };
 		DCD197FD165DF88300D9D960 /* ASNetStockInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD197FC165DF88300D9D960 /* ASNetStockInfo.m */; };
 		DCD772D5165C87FF0048BC3E /* ASStockToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD772D4165C87FF0048BC3E /* ASStockToolBar.m */; };
 		DCDB5A37165B16C400167943 /* ASStockGridding.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB5A36165B16C400167943 /* ASStockGridding.m */; };
@@ -78,6 +79,8 @@
 		DCCFDD64165506A700DFAF14 /* ASDrawLineChartDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDrawLineChartDemo.m; sourceTree = "<group>"; };
 		DCCFDD66165506B500DFAF14 /* ASStockInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStockInfo.h; sourceTree = "<group>"; };
 		DCCFDD67165506B500DFAF14 /* ASStockInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStockInfo.m; sourceTree = "<group>"; };
+		DCD0692C165EFD96009C79B3 /* ASStockDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ASStockDataView.h; sourceTree = "<group>"; };
+		DCD0692D165EFD96009C79B3 /* ASStockDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStockDataView.m; sourceTree = "<group>"; };
 		DCD197FB165DF88300D9D960 /* ASNetStockInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNetStockInfo.h; sourceTree = "<group>"; };
 		DCD197FC165DF88300D9D960 /* ASNetStockInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNetStockInfo.m; sourceTree = "<group>"; };
 		DCD772D3165C87FF0048BC3E /* ASStockToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStockToolBar.h; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 		DCCFDD1F1655068000DFAF14 = {
 			isa = PBXGroup;
 			children = (
+				DCD0692A165EFCC7009C79B3 /* StockDataShow */,
 				DCDE37FE165DB1FD006C1A5B /* StockKLine */,
 				DCD772D3165C87FF0048BC3E /* ASStockToolBar.h */,
 				DCD772D4165C87FF0048BC3E /* ASStockToolBar.m */,
@@ -215,6 +219,15 @@
 				DCCFDD551655068100DFAF14 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCD0692A165EFCC7009C79B3 /* StockDataShow */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0692C165EFD96009C79B3 /* ASStockDataView.h */,
+				DCD0692D165EFD96009C79B3 /* ASStockDataView.m */,
+			);
+			name = StockDataShow;
 			sourceTree = "<group>";
 		};
 		DCDE37FE165DB1FD006C1A5B /* StockKLine */ = {
@@ -361,6 +374,7 @@
 				DCDE380E165DB231006C1A5B /* ASDrawKLine.m in Sources */,
 				DCDE3811165DB71A006C1A5B /* ASPosConv.m in Sources */,
 				DCD197FD165DF88300D9D960 /* ASNetStockInfo.m in Sources */,
+				DCD0692E165EFD96009C79B3 /* ASStockDataView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

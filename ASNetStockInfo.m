@@ -96,8 +96,7 @@
     if (!bRequest)  return;
     
     [m_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:m_strInfoString]]];
-    
-    
+
 }
 
 
@@ -138,7 +137,7 @@
     {
         notification = [NSNotification notificationWithName:@"GetHtmlContentKLine" object:nil userInfo:dicInfo];
     }
-    
+    //发通知
     [[NSNotificationCenter defaultCenter] postNotification:notification];
 
 }

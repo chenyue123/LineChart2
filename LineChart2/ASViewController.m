@@ -138,9 +138,9 @@
     NSInteger unitFlags = NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit;
     NSDateComponents *conponent = [cal components:unitFlags fromDate:senddate];
     NSInteger currentYear = [conponent year];
-    
     NSInteger currentMonth = [conponent month];
     NSInteger currentDay = [conponent day];
+    
     NSInteger oldMonth;
     NSInteger oldYear;
     NSInteger oldDay;
@@ -196,8 +196,58 @@
     }
 
     [self.view addSubview:m_ImageLine];
-   
 }
+-(int)getOldYear:(int)currentYear :(int)currentMonth :(int)currentDay
+{
+    int oldYear;
+    if(currentMonth > 3)
+    {
+        oldYear = currentYear;
+    }
+    if(currentMonth <= 3)
+    {
+        oldYear = currentYear - 1;
+    }
+    return oldYear;
+}
+-(int)getOldMonth:(int)currentYear :(int)currentMonth :(int)currentDay
+{
+    int oldMonth;
+    if(currentMonth > 3)
+    {
+        oldMonth = currentMonth - 3;
+    }
+    if(currentMonth <= 3)
+    {
+        oldMonth = currentMonth + 9;
+    }
+    return oldMonth;
+}
+-(int)getOldDay:(int)currentYear :(int)currentMonth :(int)currentDay
+{
+    int oldDay;
+    if(currentMonth > 3)
+    {
+        if(currentDay <= 28)
+        {
+            oldDay = currentDay;
+        }else{
+            oldDay = 28;
+        }
+    }
+    if(currentMonth <= 3)
+    {
+        if(currentDay <= 28)
+        {
+            oldDay = currentDay;
+        }else{
+            oldDay = 28;
+        }
+    }
+    return oldDay;
+}
+
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
